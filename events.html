@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events | ILA Leoben</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .montan-petrol { background-color: #014D4B; }
+        .text-montan-petrol { color: #014D4B; }
+        .border-montan-petrol { border-color: #014D4B; }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+    <nav class="bg-[#1a1a1a] text-white shadow-xl sticky top-0 z-50 border-b-2 border-[#014D4B]">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center space-x-3">
+                <div class="w-10 h-10 montan-petrol flex items-center justify-center rounded">
+                    <span class="text-white font-black text-xl">ILA</span>
+                </div>
+                <div class="font-extrabold tracking-tighter">LEOBEN</div>
+            </a>
+            <div class="flex space-x-6 font-semibold text-sm uppercase tracking-widest">
+                <a href="index.html" class="hover:text-montan-petrol transition">Home</a>
+                <a href="mitglied-werden.html" class="text-montan-petrol">Mitglied werden</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="py-16 bg-[#1a1a1a] text-white border-b-8 border-[#014D4B]">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-6xl font-black mb-4 uppercase">Kommende <span class="text-montan-petrol">Events</span></h1>
+            <p class="text-xl text-gray-400">Erlebe Logistik hautnah – von Global Playern bis hin zu spezialisierten Institutionen.</p>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-16">
+        <div class="grid md:grid-cols-3 gap-10">
+            
+            <div class="bg-white rounded-2xl shadow-xl overflow-hidden flex flex-col hover:scale-105 transition transform duration-300 border border-gray-200">
+                <div class="h-48 bg-gray-300 relative">
+                    <div class="absolute top-4 right-4 bg-orange-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase">Logistik-Profi</div>
+                    <div class="w-full h-full flex items-center justify-center text-gray-500 font-bold italic text-xl uppercase p-4">Cargo Partner</div>
+                </div>
+                <div class="p-8 flex-grow">
+                    <h3 class="text-2xl font-bold mb-3 italic">Internationale Spedition</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Wir besuchen das Headquarter/Lager von **Cargo Partner**. Erfahre, wie globale Lieferketten gesteuert werden und wie modernes Warehouse-Management in der Praxis aussieht.
+                    </p>
+                    <div class="flex items-center text-sm font-bold text-gray-500 space-x-4">
+                        <span>📍 Fischamend / Wien</span>
+                        <span>📅 TBD</span>
+                    </div>
+                </div>
+                <div class="p-6 bg-gray-50 border-t">
+                    <a href="mitglied-werden.html" class="block text-center montan-petrol text-white font-bold py-3 rounded-lg hover:opacity-90 transition">Jetzt anmelden</a>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-xl overflow-hidden flex flex-col hover:scale-105 transition transform duration-300 border border-gray-200">
+                <div class="h-48 bg-gray-800 relative">
+                    <div class="absolute top-4 right-4 bg-red-600 text-white px-3 py-1 rounded-full text-xs font-bold uppercase">Exklusiv</div>
+                    <div class="w-full h-full flex items-center justify-center text-white font-bold italic text-xl uppercase p-4">JA LEOBEN</div>
+                </div>
+                <div class="p-8 flex-grow">
+                    <h3 class="text-2xl font-bold mb-3 italic">Hinter Gittern</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Die zweite Exkursion in die **Justizanstalt Leoben**. Ein spannender Einblick in die Versorgungslogistik und Sicherheitsabläufe einer der modernsten Haftanstalten Europas.
+                    </p>
+                    <div class="flex items-center text-sm font-bold text-gray-500 space-x-4">
+                        <span>📍 Leoben</span>
+                        <span>📅 April 2026</span>
+                    </div>
+                </div>
+                <div class="p-6 bg-gray-50 border-t">
+                    <a href="mitglied-werden.html" class="block text-center bg-black text-white font-bold py-3 rounded-lg hover:opacity-90 transition">Restplätze sichern</a>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-xl overflow-hidden flex flex-col hover:scale-105 transition transform duration-300 border border-gray-200">
+                <div class="h-48 bg-blue-50 relative border-b">
+                    <div class="absolute top-4 right-4 bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-bold uppercase">Health Care</div>
+                    <div class="w-full h-full flex items-center justify-center text-blue-900 font-bold italic text-xl uppercase p-4">LKH GRAZ</div>
+                </div>
+                <div class="p-8 flex-grow">
+                    <h3 class="text-2xl font-bold mb-3 italic">Krankenhauslogistik</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Wie kommen Medikamente, Essen und Wäsche punktgenau zum Patienten? Wir besuchern das **LKH Graz** und sehen uns die automatisierte Transportlogistik (FTS) an.
+                    </p>
+                    <div class="flex items-center text-sm font-bold text-gray-500 space-x-4">
+                        <span>📍 Graz</span>
+                        <span>📅 Mai 2026</span>
+                    </div>
+                </div>
+                <div class="p-6 bg-gray-50 border-t">
+                    <a href="mitglied-werden.html" class="block text-center montan-petrol text-white font-bold py-3 rounded-lg hover:opacity-90 transition">Anmeldung folgen</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="mt-20 bg-montan-petrol/10 border-l-8 border-montan-petrol p-8 rounded-r-xl">
+            <h4 class="text-xl font-bold mb-2 uppercase">Wichtige Information</h4>
+            <p class="text-gray-700">
+                Die Teilnahme an Exkursionen ist exklusiv für <strong>ILA-Mitglieder</strong> möglich. Die Anmeldung erfolgt nach dem "First-Come-First-Serve"-Prinzip über unsere interne Mailingliste oder die WhatsApp-Gruppe.
+            </p>
+        </div>
+    </main>
+
+    <footer class="bg-black text-gray-500 py-12 text-center border-t-4 border-[#014D4B]">
+        <p>&copy; 2026 ILA Leoben | Glück Auf!</p>
+    </footer>
+
+</body>
+</html>
