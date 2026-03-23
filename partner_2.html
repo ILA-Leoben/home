@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Partnerübersicht | ILA Leoben</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .montan-petrol { background-color: #014D4B; }
+        .text-montan-petrol { color: #014D4B; }
+        .raiffeisen-yellow { background-color: #FFEE00; }
+        
+        /* Smooth transition für das Ausklappen */
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+        .accordion-item.active .accordion-content {
+            max-height: 1000px; /* Großer Wert für variablen Inhalt */
+        }
+        .accordion-item.active .chevron {
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-900 antialiased">
+
+    <nav class="bg-[#1a1a1a] text-white py-4 border-b-2 border-[#014D4B]">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <a href="index.html" class="font-bold flex items-center hover:text-gray-400 transition">
+                <span class="mr-2">←</span> Home
+            </a>
+            <div class="text-sm font-bold uppercase tracking-widest">Unsere Netzwerk-Partner</div>
+        </div>
+    </nav>
+
+    <main class="container mx-auto px-6 py-12 max-w-4xl">
+        <h1 class="text-3xl font-black mb-8 text-center uppercase tracking-tight">Partner des <span class="text-montan-petrol">ILA Leoben</span></h1>
+
+        <div class="space-y-4">
+            <div class="accordion-item bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden">
+                <button onclick="toggleAccordion(this)" class="w-full flex items-center justify-between p-6 focus:outline-none hover:bg-gray-50 transition">
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 flex items-center justify-center bg-gray-50 rounded-lg p-1">
+                            <img src="raiffeisenbank_leoben_bruck_logo.jpg" alt="Logo" class="max-w-full h-auto object-contain">
+                        </div>
+                        <div class="text-left">
+                            <span class="text-[10px] font-black uppercase px-2 py-0.5 raiffeisen-yellow rounded">Exklusiv-Partner</span>
+                            <h3 class="font-bold text-lg">Raiffeisenbank Leoben-Bruck</h3>
+                        </div>
+                    </div>
+                    <svg class="chevron w-6 h-6 text-gray-400 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </button>
+
+                <div class="accordion-content">
+                    <div class="p-6 pt-0 border-t border-gray-50">
+                        <div class="grid md:grid-cols-2 gap-8 mt-6">
+                            <div>
+                                <h4 class="font-bold text-montan-petrol mb-2 uppercase text-sm tracking-wider">Über die Partnerschaft</h4>
+                                <p class="text-gray-600 text-sm leading-relaxed">
+                                    Die Raiffeisenbank unterstützt den ILA Leoben als Mentor für finanzielle Bildung. Gemeinsam fördern wir den Austausch zwischen Wissenschaft und Praxis.
+                                </p>
+                                <div class="mt-4 p-4 bg-gray-50 rounded-lg border-l-4 border-[#FFEE00]">
+                                    <p class="text-xs font-bold mb-1">ILA-Vorteile:</p>
+                                    <ul class="text-xs space-y-1 text-gray-700">
+                                        <li>• Kostenloses Studentenkonto</li>
+                                        <li>• Beratung zur Studienfinanzierung</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div class="bg-gray-50 p-4 rounded-lg text-sm">
+                                <h4 class="font-bold mb-2">Kontakt</h4>
+                                <p><strong>Adresse:</strong> Hauptplatz 13, 8700 Leoben</p>
+                                <p class="mt-2"><strong>Web:</strong> <a href="#" class="text-blue-600 hover:underline">raiffeisen.at/leoben</a></p>
+                                <a href="#" class="mt-4 block w-full bg-[#1a1a1a] text-white text-center py-2 rounded font-bold text-xs uppercase tracking-widest hover:bg-montan-petrol transition">Webseite öffnen</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+    </main>
+
+    <script>
+        function toggleAccordion(element) {
+            const item = element.parentElement;
+            // Schließt andere (optional - falls immer nur einer offen sein soll)
+            /* document.querySelectorAll('.accordion-item').forEach(i => {
+                if (i !== item) i.classList.remove('active');
+            });
+            */
+            item.classList.toggle('active');
+        }
+    </script>
+
+</body>
+</html>
