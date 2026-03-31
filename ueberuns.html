@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Über uns | ILA Leoben</title>
+    <title>Team | ILA Leoben</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
     <style>
@@ -11,8 +11,8 @@
         .montan-petrol { background-color: #014D4B; }
         .text-montan-petrol { color: #014D4B; }
         .border-montan-petrol { border-color: #014D4B; }
-        .card-hover { transition: transform 0.3s ease, shadow 0.3s ease; }
-        .card-hover:hover { transform: translateY(-5px); }
+        .card-hover { transition: all 0.3s ease; }
+        .card-hover:hover { transform: translateY(-5px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1); }
     </style>
 </head>
 <body class="bg-gray-100 text-gray-900">
@@ -29,15 +29,6 @@
                     </div>
                 </a>
             </div>
-
-            <div class="md:hidden">
-                <button onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" class="text-white focus:outline-none">
-                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-                    </svg>
-                </button>
-            </div>
-
             <div class="hidden md:flex space-x-8 font-semibold text-sm uppercase tracking-widest items-center">
                 <a href="index.html" class="hover:text-montan-petrol transition">Home</a>
                 <a href="events.html" class="hover:text-montan-petrol transition">Events</a>
@@ -45,115 +36,108 @@
                 <a href="mitglied-werden.html" class="montan-petrol text-white px-4 py-2 rounded hover:bg-white hover:text-black transition border border-montan-petrol">Mitglied werden</a>
             </div>
         </div>
-
-        <div id="mobile-menu" class="hidden md:hidden bg-[#262626] border-t border-gray-700">
-            <div class="flex flex-col p-4 space-y-4 font-semibold uppercase text-sm tracking-widest">
-                <a href="index.html" class="hover:text-montan-petrol py-2 border-b border-gray-800">Home</a>
-                <a href="events.html" class="hover:text-montan-petrol py-2 border-b border-gray-800">Events</a>
-                <a href="#" class="text-montan-petrol py-2 border-b border-gray-800">Über uns</a>
-                <a href="mitglied-werden.html" class="text-montan-petrol py-2">Mitglied werden</a>
-            </div>
-        </div>
     </nav>
 
     <header class="py-16 bg-white border-b-4 border-montan-petrol">
         <div class="container mx-auto px-6 text-center">
-            <h1 class="text-5xl font-black mb-4 tracking-tight uppercase italic">Unser <span class="text-montan-petrol">Team</span></h1>
-            <p class="text-xl text-gray-500 max-w-2xl mx-auto font-light">Die Gesichter hinter der ILA Leoben – engagiert für die Verbindung von Studium und Industrie.</p>
+            <h1 class="text-4xl md:text-5xl font-black mb-4 uppercase tracking-tight">Unser <span class="text-montan-petrol">Vorstand</span></h1>
+            <p class="text-lg text-gray-500 max-w-2xl mx-auto font-light italic">"Glück Auf!" – Das Team der ILA Leoben stellt sich vor.</p>
         </div>
     </header>
 
-    <main class="py-20 container mx-auto px-6 max-w-6xl">
+    <main class="py-16 container mx-auto px-6 max-w-6xl">
         
-        <div class="mb-24">
-            <h2 class="text-3xl font-extrabold mb-10 border-l-8 border-black pl-4 uppercase tracking-wider">Vereinsführung</h2>
-            <div class="grid md:grid-cols-2 gap-10">
-                <div class="bg-white rounded-2xl shadow-xl overflow-hidden border-t-8 border-montan-petrol card-hover">
-                    <div class="h-80 bg-gray-200">
-                        <img src="p/obmann.jpg" alt="Obmann" class="w-full h-full object-cover">
-                    </div>
-                    <div class="p-8">
-                        <span class="text-xs font-bold uppercase text-montan-petrol tracking-widest">Obmann</span>
-                        <h3 class="text-2xl font-bold mb-3 uppercase">Vorname Nachname</h3>
-                        <p class="text-gray-600 text-sm mb-6 leading-relaxed">Strategische Leitung, Repräsentation und Hauptansprechpartner für Partner aus der Industrie.</p>
-                        <div class="bg-gray-50 p-4 rounded-lg italic text-gray-500 text-sm border-l-4 border-montan-petrol shadow-inner">
-                            "Logistik ist das Herzschlag der Industrie – wir geben den Takt vor."
-                        </div>
-                    </div>
-                </div>
-                <div class="bg-white rounded-2xl shadow-xl overflow-hidden border-t-8 border-montan-petrol card-hover">
-                    <div class="h-80 bg-gray-200">
-                        <img src="p/obmann_stellv.jpg" alt="Stellvertreter" class="w-full h-full object-cover">
-                    </div>
-                    <div class="p-8">
-                        <span class="text-xs font-bold uppercase text-montan-petrol tracking-widest">Obmann Stellvertreter</span>
-                        <h3 class="text-2xl font-bold mb-3 uppercase">Vorname Nachname</h3>
-                        <p class="text-gray-600 text-sm mb-6 leading-relaxed">Unterstützung der Leitung und Koordination der internen Vereinsaktivitäten.</p>
-                        <div class="bg-gray-50 p-4 rounded-lg italic text-gray-500 text-sm border-l-4 border-montan-petrol shadow-inner">
-                            "Gemeinsam Brücken zwischen Theorie und Praxis bauen."
-                        </div>
-                    </div>
+        <div class="grid md:grid-cols-2 gap-8">
+
+            <div class="col-span-full mb-2 mt-8 border-b border-gray-300 pb-2">
+                <h2 class="text-xl font-bold uppercase tracking-widest text-gray-400">Vereinsführung</h2>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-md overflow-hidden flex border border-gray-100 card-hover">
+                <div class="w-1/3 bg-gray-200"><img src="p/obmann.jpg" class="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-500"></div>
+                <div class="w-2/3 p-6 flex flex-col justify-center">
+                    <span class="text-[10px] font-bold uppercase text-montan-petrol tracking-widest">Obmann</span>
+                    <h4 class="text-lg font-bold">Vorname Nachname</h4>
+                    <p class="text-gray-500 text-xs my-2 italic border-l-2 border-montan-petrol pl-2">"Logistik ist das Herzschlag der Industrie."</p>
                 </div>
             </div>
-        </div>
 
-        <div class="mb-24">
-            <h2 class="text-2xl font-extrabold mb-10 border-l-8 border-gray-400 pl-4 uppercase tracking-wider">Verwaltung & Finanzen</h2>
-            <div class="grid md:grid-cols-2 gap-8">
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden flex border border-gray-100 card-hover">
-                    <div class="w-1/3 bg-gray-200"><img src="p/kassier.jpg" class="w-full h-full object-cover"></div>
-                    <div class="w-2/3 p-6 flex flex-col justify-center">
-                        <span class="text-[10px] font-bold uppercase text-montan-petrol tracking-widest">Kassier</span>
-                        <h4 class="text-lg font-bold">Vorname Nachname</h4>
-                        <p class="text-gray-500 text-xs my-2 italic border-l-2 border-gray-200 pl-2">"Präzision in den Zahlen, Erfolg im Projekt."</p>
-                    </div>
-                </div>
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden flex border border-gray-100 card-hover">
-                    <div class="w-1/3 bg-gray-200"><img src="p/kassier_stellv.jpg" class="w-full h-full object-cover"></div>
-                    <div class="w-2/3 p-6 flex flex-col justify-center">
-                        <span class="text-[10px] font-bold uppercase text-montan-petrol tracking-widest">Kassier Stellvertreter</span>
-                        <h4 class="text-lg font-bold">Vorname Nachname</h4>
-                        <p class="text-gray-500 text-xs my-2 italic border-l-2 border-gray-200 pl-2">"Verantwortung für unsere Ressourcen."</p>
-                    </div>
-                </div>
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden flex border border-gray-100 card-hover">
-                    <div class="w-1/3 bg-gray-200"><img src="p/schriftf.jpg" class="w-full h-full object-cover"></div>
-                    <div class="w-2/3 p-6 flex flex-col justify-center">
-                        <span class="text-[10px] font-bold uppercase text-montan-petrol tracking-widest">Schriftführer</span>
-                        <h4 class="text-lg font-bold">Vorname Nachname</h4>
-                        <p class="text-gray-500 text-xs my-2 italic border-l-2 border-gray-200 pl-2">"Wer schreibt, der bleibt."</p>
-                    </div>
-                </div>
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden flex border border-gray-100 card-hover">
-                    <div class="w-1/3 bg-gray-200"><img src="p/schriftf_stellv.jpg" class="w-full h-full object-cover"></div>
-                    <div class="w-2/3 p-6 flex flex-col justify-center">
-                        <span class="text-[10px] font-bold uppercase text-montan-petrol tracking-widest">Schriftführer Stellv.</span>
-                        <h4 class="text-lg font-bold">Vorname Nachname</h4>
-                        <p class="text-gray-500 text-xs my-2 italic border-l-2 border-gray-200 pl-2">"Struktur ist alles."</p>
-                    </div>
+            <div class="bg-white rounded-xl shadow-md overflow-hidden flex border border-gray-100 card-hover">
+                <div class="w-1/3 bg-gray-200"><img src="p/obmann_stellv.jpg" class="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-500"></div>
+                <div class="w-2/3 p-6 flex flex-col justify-center">
+                    <span class="text-[10px] font-bold uppercase text-montan-petrol tracking-widest">Obmann Stellvertreter</span>
+                    <h4 class="text-lg font-bold">Vorname Nachname</h4>
+                    <p class="text-gray-500 text-xs my-2 italic border-l-2 border-montan-petrol pl-2">"Brücken bauen zwischen Campus und Praxis."</p>
                 </div>
             </div>
-        </div>
 
-        <div class="mb-20">
-            <h2 class="text-2xl font-extrabold mb-10 border-l-8 border-gray-400 pl-4 uppercase tracking-wider">Medien & Soziales</h2>
-            <div class="max-w-3xl">
-                <div class="bg-white rounded-2xl shadow-xl overflow-hidden flex flex-col md:flex-row border-l-8 border-montan-petrol card-hover">
-                    <div class="md:w-64 h-64 bg-gray-200">
-                        <img src="p/medien.jpg" alt="Medien" class="w-full h-full object-cover">
-                    </div>
-                    <div class="p-8 flex-1 flex flex-col justify-center">
-                        <span class="text-xs font-bold uppercase text-montan-petrol tracking-widest">Marketing & Community</span>
-                        <h3 class="text-2xl font-bold mb-3 uppercase">Vorname Nachname</h3>
-                        <p class="text-gray-600 text-sm mb-4 leading-relaxed">Verantwortlich für Social Media, die Website und die Förderung des sozialen Austauschs innerhalb der Association.</p>
-                        <div class="italic text-gray-500 text-sm font-medium">
-                            "Wir machen Industrielogistik sichtbar und erlebbar."
-                        </div>
-                    </div>
+            <div class="col-span-full mb-2 mt-8 border-b border-gray-300 pb-2">
+                <h2 class="text-xl font-bold uppercase tracking-widest text-gray-400">Finanzen & Sponsoring</h2>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-md overflow-hidden flex border border-gray-100 card-hover">
+                <div class="w-1/3 bg-gray-200"><img src="p/kassier.jpg" class="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-500"></div>
+                <div class="w-2/3 p-6 flex flex-col justify-center">
+                    <span class="text-[10px] font-bold uppercase text-montan-petrol tracking-widest">Kassier</span>
+                    <h4 class="text-lg font-bold">Vorname Nachname</h4>
+                    <p class="text-gray-500 text-xs my-2 italic border-l-2 border-montan-petrol pl-2">"Präzision in den Zahlen schafft Vertrauen."</p>
                 </div>
             </div>
-        </div>
 
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden flex border border-gray-100 card-hover">
+                <div class="w-1/3 bg-gray-200"><img src="p/kassier_stellv.jpg" class="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-500"></div>
+                <div class="w-2/3 p-6 flex flex-col justify-center">
+                    <span class="text-[10px] font-bold uppercase text-montan-petrol tracking-widest">Kassier Stellvertreter</span>
+                    <h4 class="text-lg font-bold">Vorname Nachname</h4>
+                    <p class="text-gray-500 text-xs my-2 italic border-l-2 border-montan-petrol pl-2">"Verantwortungsvoller Umgang mit Ressourcen."</p>
+                </div>
+            </div>
+
+            <div class="col-span-full mb-2 mt-8 border-b border-gray-300 pb-2">
+                <h2 class="text-xl font-bold uppercase tracking-widest text-gray-400">Schriftführung & Protokoll</h2>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-md overflow-hidden flex border border-gray-100 card-hover">
+                <div class="w-1/3 bg-gray-200"><img src="p/schriftf.jpg" class="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-500"></div>
+                <div class="w-2/3 p-6 flex flex-col justify-center">
+                    <span class="text-[10px] font-bold uppercase text-montan-petrol tracking-widest">Schriftführer</span>
+                    <h4 class="text-lg font-bold">Vorname Nachname</h4>
+                    <p class="text-gray-500 text-xs my-2 italic border-l-2 border-montan-petrol pl-2">"Wer schreibt, der bleibt."</p>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden flex border border-gray-100 card-hover">
+                <div class="w-1/3 bg-gray-200"><img src="p/schriftf_stellv.jpg" class="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-500"></div>
+                <div class="w-2/3 p-6 flex flex-col justify-center">
+                    <span class="text-[10px] font-bold uppercase text-montan-petrol tracking-widest">Schriftführer Stellv.</span>
+                    <h4 class="text-lg font-bold">Vorname Nachname</h4>
+                    <p class="text-gray-500 text-xs my-2 italic border-l-2 border-montan-petrol pl-2">"Struktur ist das halbe Leben."</p>
+                </div>
+            </div>
+
+            <div class="col-span-full mb-2 mt-8 border-b border-gray-300 pb-2">
+                <h2 class="text-xl font-bold uppercase tracking-widest text-gray-400">Medien & Soziales</h2>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-md overflow-hidden flex border border-gray-100 card-hover">
+                <div class="w-1/3 bg-gray-200"><img src="p/medien_1.jpg" class="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-500"></div>
+                <div class="w-2/3 p-6 flex flex-col justify-center">
+                    <span class="text-[10px] font-bold uppercase text-montan-petrol tracking-widest">Medien & Soziales</span>
+                    <h4 class="text-lg font-bold">Vorname Nachname</h4>
+                    <p class="text-gray-500 text-xs my-2 italic border-l-2 border-montan-petrol pl-2">"Sichtbarkeit für unsere Projekte schaffen."</p>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-md overflow-hidden flex border border-gray-100 card-hover">
+                <div class="w-1/3 bg-gray-200"><img src="p/medien_2.jpg" class="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-500"></div>
+                <div class="w-2/3 p-6 flex flex-col justify-center">
+                    <span class="text-[10px] font-bold uppercase text-montan-petrol tracking-widest">Medien & Soziales Stellv.</span>
+                    <h4 class="text-lg font-bold">Vorname Nachname</h4>
+                    <p class="text-gray-500 text-xs my-2 italic border-l-2 border-montan-petrol pl-2">"Networking und Community-Building."</p>
+                </div>
+            </div>
+
+        </div>
     </main>
 
     <footer class="bg-black text-gray-400 py-12 border-t-4 border-[#014D4B]">
