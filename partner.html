@@ -171,10 +171,9 @@
         function toggleAccordion(element) {
             const item = element.parentElement;
             // Schließt andere (optional - falls immer nur einer offen sein soll)
-            /* document.querySelectorAll('.accordion-item').forEach(i => {
+            document.querySelectorAll('.accordion-item').forEach(i => {
                 if (i !== item) i.classList.remove('active');
-            });
-            */
+            });            
             item.classList.toggle('active');
         }
     </script>
